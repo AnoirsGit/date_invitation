@@ -1,20 +1,22 @@
 <script lang="ts">
+	import Parallax from "./components/Parallax.svelte";
 	export let name: string;
 </script>
 
 <main>
-
-	<div class="animation-area">
-		<ul class="box-area">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-		</ul>
+	<Parallax />
+	<div class="relative">
+		<div class="animation-area">
+			<ul class="box-area">
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+				<li />
+			</ul>
+		</div>
 	</div>
-	
 </main>

@@ -18,6 +18,7 @@ module.exports = {
       current: 'currentColor',
       "black": '#000',
       "white": '#fff',
+      "brown": '#2D112B'
     }
   }
 };
