@@ -9,17 +9,27 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: SF_Pro_Display;
-  background-color: #2D112B;
+  background-color: white;
 }
 
-.animation-area{
+.animation_area{
+    width: 100vw;
+    height: 200vh;
+}
+
+.top-screen{
+    top: 100vh;
+}
+
+.leaf_fall{
     width: 100%;
     height: 100vh;
+    top: 100vh;
 }
 
 .box-area{
     position: absolute;
-    top: 100vh;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -29,17 +39,16 @@ html {
 .box-area li{
     position: absolute;
     display: block;
-    width: 25;
-    height: 25;
-    background: rgba(255,255,2555, 0.3);
+    width: 25px;
+    height: 25px;
     animation: animate 24s linear infinite;
     top: -200px;
 } 
 
 .box-area li:nth-child(1){
     left: 92%;
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     animation-delay: 0s;
 }
 
@@ -52,16 +61,16 @@ html {
 }
 .box-area li:nth-child(3){
     left: 68%;
-    width: 87px;
-    height: 87px;
+    width: 15px;
+    height: 15px;
     animation-delay: 5.5s;
 }
 
 
 .box-area li:nth-child(4){
     left: 86%;
-    width: 110px;
-    height: 110px;
+    width: 47px;
+    height: 47px;
     animation-delay: 0s;
     animation-duration: 16s;
 }
@@ -76,22 +85,22 @@ html {
 
 .box-area li:nth-child(6){
     left: 15%;
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     animation-delay: 3.5s;
 }
 .box-area li:nth-child(7){
     left: 30%;
-    width: 180px;
-    height: 180px;
+    width: 90px;
+    height: 90px;
     animation-delay: 0s;
 }
 
 
 .box-area li:nth-child(8){
     left: 0%;
-    width: 130px;
-    height: 130px;
+    width: 65px;
+    height: 65px;
     animation-delay: 3.5s;
 }
 

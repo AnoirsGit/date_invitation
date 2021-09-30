@@ -530,12 +530,16 @@ video {
   border-color: currentColor;
 }
 
-.relative {
-  position: relative;
+.absolute {
+  position: absolute;
 }
 
 .table {
   display: table;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 @-webkit-keyframes spin {
@@ -602,6 +606,11 @@ video {
     -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
             animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
+}
+
+.bg-brown {
+  --tw-bg-opacity: 1;
+  background-color: rgba(45, 17, 43, var(--tw-bg-opacity));
 }
 
 *, ::before, ::after {

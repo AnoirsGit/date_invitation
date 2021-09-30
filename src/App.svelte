@@ -1,22 +1,15 @@
 <script lang="ts">
 	import Parallax from "./components/Parallax.svelte";
-	export let name: string;
+	import LeafFall from "./components/LeafFall.svelte"
 </script>
 
 <main>
-	<Parallax />
-	<div class="relative">
-		<div class="animation-area">
-			<ul class="box-area">
-				<li />
-				<li />
-				<li />
-				<li />
-				<li />
-				<li />
-				<li />
-				<li />
-			</ul>
+	<div class="animation_area bg-brown">
+		<div class="parallax_container">
+			<Parallax />
+		</div>
+		<div class="absolute top-screen w-screen">
+			<LeafFall />
 		</div>
 	</div>
 </main>
