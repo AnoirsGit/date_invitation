@@ -1,10 +1,10 @@
 <script>
 </script>
 
-<div class="flex gap-6 flex-col justify-center lg:flex-row">
+<div class="flex gap-6 flex-col justify-center lg:flex-row ">
     <img class="w-full lg:w-128 shadow-lg" src="/img/Akzhan.jpg" alt="Akzhan" />
     <div
-        class="flex flex-col py-8 gap-8 lg:gap-12 text-white text-center lg:w-160 "
+        class="flex flex-col py-8 gap-8 lg:gap-12 text-white text-center "
     >
         <h1 class="text-3xl lg:text-5xl">Date invitation</h1>
         <p class="text-xl">
