@@ -1,124 +1,14 @@
-body,
-html {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  font-family: SF_Pro_Display;
-  background-color: white;
-}
-
-.animation_area{
-    width: 100vw;
-    height: 200vh;
-}
-
-.top-screen{
-    top: 100vh;
-}
-
-.leaf_fall{
-    width: 100%;
-    height: 100vh;
-    top: 100vh;
-}
-
-.box-area{
+body, html {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.box-area li{
-    position: absolute;
-    display: block;
-    width: 25px;
-    height: 25px;
-    animation: animate 24s linear infinite;
-    top: -200px;
-} 
-
-.box-area li:nth-child(1){
-    left: 92%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 0s;
-}
-
-.box-area li:nth-child(2){
-    left: 12%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 1.5s;
-    animation-duration: 10s;
-}
-.box-area li:nth-child(3){
-    left: 68%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 5.5s;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: SF_Pro_Display;
+    background-color: white;
 }
 
 
-.box-area li:nth-child(4){
-    left: 86%;
-    width: 47px;
-    height: 47px;
-    animation-delay: 0s;
-    animation-duration: 16s;
-}
-
-.box-area li:nth-child(5){
-    left: 70%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 0s;
-}
-
-
-.box-area li:nth-child(6){
-    left: 15%;
-    width: 10px;
-    height: 10px;
-    animation-delay: 3.5s;
-}
-.box-area li:nth-child(7){
-    left: 30%;
-    width: 90px;
-    height: 90px;
-    animation-delay: 0s;
-}
-
-
-.box-area li:nth-child(8){
-    left: 0%;
-    width: 65px;
-    height: 65px;
-    animation-delay: 3.5s;
-}
-
-@keyframes animate {
-    0%{
-        transform: translateY(200px) rotate(36deg);
-        opacity: 0;
-    }
-    50%{
-        transform: translateY(60vh) rotate(180deg);
-        opacity: 1;
-    }
-    80%{
-        transform: translateY(108vh) rotate(324deg);
-        opacity: 0.02;
-    }
-    100%{
-        transform: translateY(120vh) rotate(360deg);
-        opacity: 0;
-    }
-}
