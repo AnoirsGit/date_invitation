@@ -10,7 +10,8 @@
         <p class="text-xl">
             I want to invite you somewhere to get to know you better !
         </p>
-        <div class="powr-form-builder -mt-10" id="4c87761e_1627404231" />
-        <script src="https://www.powr.io/powr.js?platform=shopify"></script>
+        <!-- <iframe src="https://www.powr.io/form-builder/u/4c87761e_1627404231#platform=iframe" style="width:100%;" height="549px" frameborder="0"></iframe> -->
+        <div class="powr-form-builder" id="4c87761e_1627404231"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
+
     </div>
 </div>
