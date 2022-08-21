@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: SF_Pro_Display;
+    src: url("/SF-Pro-Display-Medium.OTF");
+}
+
+.sf_pro {
+    font-family: SF_Pro_Display , sans-serif, serif;
+}
+
+.header{
+    @apply bg-brown relative h-80 lg:h-192;
+}
+.parallax_container {
+    width: 120%;
+    left: -10%;
+    @apply bg-brown absolute h-168 lg:h-192;
+}
+
+
+.main-info{
+    @apply lg:h-192;
+}
+
+
+#scene .layer {
+    @apply absolute inset-0 h-168 lg:h-192;
+}
+
+@media (min-width: 1024px) {
+    #scene .layer {
+      height: 48rem;
+    }
+}
+
+#scene .layer img {
+    object-fit: cover;
+    @apply absolute bottom-0 h-2/5 lg:w-full lg:w-auto lg:h-192;
+}
+
+#scene .layer:first-child img {
+    @apply top-0 h-2/5 lg:w-full lg:h-192;
+}
+
+#scene .layer:nth-child(2) img {
+    @apply left-40 top-0 h-auto w-10 lg:w-40;
+}
+
+#scene .layer:last-child img {
+    transform: scale(1.5);
+    @apply bottom-0 lg:h-128;
+}
+
+.head-title {
+    left: 50%;
+    top: 40%;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: white;
+    @apply text-4xl lg:text-9xl;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}
+
+@media (max-width: 640px) {
+    #scene .layer img {
+        top: 0;
+    }
+
+    .head-title{
+        top: 18%;
+    }
+
+    .main-info{
+        height: 170vh;
+    }
+}
+
+
+.contact-me a{
+    cursor: pointer;
+    overflow:hidden;
+    background-color: #fff3e6;
+    transition: all 0.4s ease-out;
+    @apply inline-block h-16 w-16 float-left rounded-full my-2 mx-5 shadow-lg ;
+}
+
+.contact-me a:hover{
+    @apply w-60;
+}
+
+
+.contact-me img{
+    cursor: pointer;
+    @apply inline-block m-2 h-12 w-12 ;
+}
+
+.contact-me span{
+    cursor: pointer;
+    @apply inline-block mt-3 mb-0;
+}
